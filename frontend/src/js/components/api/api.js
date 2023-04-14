@@ -24,5 +24,5 @@ class Api {
        });
    }
 }
-const api = new Api('http://localhost:7070');
+const api = new Api('https://sse-ws-game.onrender.com');
 export default api;

@@ -9,7 +9,7 @@ export default class Game {
       this.url = url;
       this.add = this.add.bind(this);
       this.onSubscribeData = this.onSubscribeData.bind(this);
-      this.sse = new EventSource('http://localhost:7070/sse');
+      this.sse = new EventSource('https://sse-ws-game.onrender.com/sse');
       this.sse.addEventListener('message', this.onSubscribeData);
    }
 
