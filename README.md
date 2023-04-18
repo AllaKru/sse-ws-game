@@ -1,2 +1,0 @@
-# sse-ws-game
-Hello
