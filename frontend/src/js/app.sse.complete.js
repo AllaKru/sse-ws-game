@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const eventSource = new EventSource('http://localhost:7070/sse');
 
 eventSource.addEventListener('comment', (evt) => {

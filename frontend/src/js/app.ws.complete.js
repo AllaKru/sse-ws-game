@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const ws = new WebSocket('ws://localhost:7070/ws');
 
 ws.addEventListener('open', () => {

@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 class API {
   constructor(url) {
     this.url = url;
-    this.contentTypeHeader = {'Content-Type': 'application/json'};
+    this.contentTypeHeader = { 'Content-Type': 'application/json' };
   }
 
   load() {
@@ -18,12 +20,12 @@ class API {
 
   remove(id) {
     return fetch(`${this.url}/${id}`, {
-      method: 'DELETE'
+      method: 'DELETE',
     });
   }
 }
 
-(async() => {
+(async () => {
   const api = new API('http://localhost:7070/contacts');
   {
     const response = await api.load();
@@ -31,7 +33,7 @@ class API {
     console.log(data);
   }
   {
-    const response = await api.add({name: 'Ivan', phone: '+79........'});
+    const response = await api.add({ name: 'Ivan', phone: '+79........' });
   }
   {
     const response = await api.load();
